@@ -1,8 +1,8 @@
-import { h, render } from 'preact';
-import Article from '../containers/article';
-import Button from '../components/button';
-import Form from '../components/form';
-import Divider from '../components/divider';
+import { h, render } from 'preact'
+import Article from '../containers/article'
+import Button from '../components/button'
+import Form from '../components/form'
+import Divider from '../components/divider'
 
 export default () => (
   <Article h3text="Get in" h3accent="Touch">
@@ -15,4 +15,4 @@ export default () => (
       <Form />
     </div>
   </Article>
-);
+)

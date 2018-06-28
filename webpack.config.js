@@ -43,9 +43,5 @@ module.exports = {
         'assets/css/main.css': code => new CleanCSS({level:2}).minify(code).styles
       }
     }),
-  ],
-  watch: true,
-  watchOptions: {
-    ignored: /node_modules/
-  }
+  ]
 }

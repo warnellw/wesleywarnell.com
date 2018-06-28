@@ -1,10 +1,10 @@
-import { h, render } from 'preact';
-import Nav from '../components/nav';
-import Headshot from '../components/headshot';
-import Section from './section';
-import Header from '../components/header';
-import Footer from '../components/footer.js';
-import cxs from 'cxs';
+import { h, render } from 'preact'
+import Nav from '../components/nav'
+import Headshot from '../components/headshot'
+import Section from './section'
+import Header from '../components/header'
+import Footer from '../components/footer.js'
+import cxs from 'cxs'
 
 export default () => (
   <div class={gridContainer}>
@@ -38,7 +38,7 @@ const gridContainer = cxs({
     'grid-template-rows': 'auto auto 2em auto auto',
     width: '1050px'
   }
-});
+})
 
 const filler = cxs({
   'grid-column': '1 / 2',
@@ -49,4 +49,4 @@ const filler = cxs({
     'grid-column': '1 / 3',
     'grid-row': '3 / 4'
   }
-});
+})

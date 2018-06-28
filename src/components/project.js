@@ -1,5 +1,5 @@
-import { h, render } from 'preact';
-import cxs from 'cxs';
+import { h, render } from 'preact'
+import cxs from 'cxs'
 
 export default (props) => (
   <div class={card}>

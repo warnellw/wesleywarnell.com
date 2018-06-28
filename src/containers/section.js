@@ -1,10 +1,10 @@
-import { h, render } from 'preact';
-import { Router } from 'preact-router';
-import cxs from 'cxs';
-import Home from '../pages/home';
-import Projects from '../pages/projects';
-import Blog from '../pages/blog';
-import Contact from '../pages/contact';
+import { h, render } from 'preact'
+import { Router } from 'preact-router'
+import cxs from 'cxs'
+import Home from '../pages/home'
+import Projects from '../pages/projects'
+import Blog from '../pages/blog'
+import Contact from '../pages/contact'
 
 export default () => (
   <section class={sectionCSS}>
@@ -31,4 +31,4 @@ const sectionCSS = cxs({
     'grid-row': '4 / 5',
     padding: '1em 3em'
   }
-});
+})

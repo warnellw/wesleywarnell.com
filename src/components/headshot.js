@@ -1,7 +1,7 @@
-import { h, render } from 'preact';
-import cxs from 'cxs';
+import { h, render } from 'preact'
+import cxs from 'cxs'
 
-export default () => <img class={headshotCSS} src="assets/images/headshot.jpg" alt="headshot"></img>;
+export default () => <img class={headshotCSS} src="assets/images/headshot.jpg" alt="headshot"></img>
 
 const headshotCSS = cxs({
   'grid-column': '1 / 2',
@@ -17,4 +17,4 @@ const headshotCSS = cxs({
     'grid-row': '2 / 4',
     'margin': '0 0 0 3em'
   }
-});
+})

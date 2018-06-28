@@ -1,5 +1,5 @@
-import { h, render } from 'preact';
-import Article from '../containers/article';
+import { h, render } from 'preact'
+import Article from '../containers/article'
 
 export default () => (
   <Article h3text="About" h3accent="Me">

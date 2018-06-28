@@ -1,5 +1,5 @@
-import { h, render } from 'preact';
-import cxs from 'cxs';
+import { h, render } from 'preact'
+import cxs from 'cxs'
 
 export default (props) => (
   <p class={dividerCSS}>
@@ -21,4 +21,4 @@ const dividerCSS = cxs({
     padding: '0 10px',
     color: '#c1c1c1'
   }
-});
+})

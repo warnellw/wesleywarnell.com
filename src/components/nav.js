@@ -1,6 +1,6 @@
-import { h, render } from 'preact';
-import cxs from 'cxs';
-import { Link } from 'preact-router/match';
+import { h, render } from 'preact'
+import cxs from 'cxs'
+import { Link } from 'preact-router/match'
 
 export default () => (
   <nav class={navCSS}>
@@ -13,7 +13,7 @@ export default () => (
 
 const active = cxs({
   'border-bottom': '2px solid #ffffff;'
-});
+})
 
 const navCSS = cxs({
   'grid-column': '1 / 2',
@@ -45,4 +45,4 @@ const navCSS = cxs({
       margin: '0 2em'
     }
   }
-});
+})

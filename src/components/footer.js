@@ -1,5 +1,5 @@
-import { h, render } from 'preact';
-import cxs from 'cxs';
+import { h, render } from 'preact'
+import cxs from 'cxs'
 
 export default () => (
   <footer class={footerCSS}>
@@ -25,4 +25,4 @@ const footerCSS = cxs({
     'grid-column': '1 / 3',
     'grid-row': '5 / 6'
   }
-});
+})

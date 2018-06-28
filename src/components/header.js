@@ -1,5 +1,5 @@
-import { h, render } from 'preact';
-import cxs from 'cxs';
+import { h, render } from 'preact'
+import cxs from 'cxs'
 
 export default () => (
   <header class={headerCSS}>
@@ -39,4 +39,4 @@ const headerCSS = cxs({
       margin: '.75em 0 0 0'
     }
   }
-});
+})

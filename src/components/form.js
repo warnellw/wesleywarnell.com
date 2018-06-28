@@ -1,6 +1,6 @@
-import { h, render } from 'preact';
-import cxs from 'cxs';
-import Button from './button';
+import { h, render } from 'preact'
+import cxs from 'cxs'
+import Button from './button'
 
 export default () => (
   <form class={formCSS} name="contact" method="post">
@@ -26,11 +26,10 @@ export default () => (
 const formCSS = cxs({
   ' > div': {
     width: '100%',
-    margin: 'auto',
     margin: '2em auto 0 auto',
     '@media (min-width: 782px)': {
       width: '600px'
-    },
+    }
   },
   ' > div > input': {
     display: 'block',
@@ -59,4 +58,4 @@ const formCSS = cxs({
   ' > button': {
     width: '100%'
   }
-});
+})
