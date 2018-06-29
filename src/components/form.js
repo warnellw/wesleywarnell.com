@@ -18,7 +18,7 @@ export default () => (
       <textarea name="message" placeholder="Through concentration, I can raise and lower my cholesterol at will."></textarea>
     </div>
     <div>
-      <Button button action="far fa-paper-plane">Send message</Button>
+      <Button button action="fa-paper-plane">Send message</Button>
     </div>
   </form>
 )

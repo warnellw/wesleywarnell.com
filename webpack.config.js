@@ -35,7 +35,7 @@ module.exports = {
       files: {
         'assets/css/main.css': [
           'src/assets/css/normalize.css',
-          'src/assets/css/fontawesome-all.css',
+          'src/assets/css/font-awesome.css',
           'src/assets/css/global.css'
         ]
       },

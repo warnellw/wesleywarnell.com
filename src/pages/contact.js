@@ -10,7 +10,7 @@ export default () => (
       <p>I look forward to hearing from you!</p>
     </div>
     <div>
-      <Button type="button" href="mailto:wes@wesleywarnell.com" icon="far fa-envelope">Send an Email</Button>
+      <Button type="button" href="mailto:wes@wesleywarnell.com" icon="fa-envelope">Send an Email</Button>
       <Divider>or</Divider>
       <Form />
     </div>

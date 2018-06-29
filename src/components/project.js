@@ -34,8 +34,9 @@ const header = cxs({
   ' > i': {
     'text-align': 'center',
     display: 'block',
-    'font-size': '175px',
-    padding: '25px'
+    'font-size': '130px',
+    padding: '13px 0',
+    'line-height': '174px'
   },
   ' > img': {
     margin: 'auto',

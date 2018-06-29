@@ -7,13 +7,13 @@ export default (props) => (
       <button type="submit" class={buttonCSS}>
         {props.icon && <i class={props.icon}></i>}
         {props.children}
-        <i class={props.action ? props.action : "fas fa-external-link-alt"}></i>
+        <i class={props.action ? props.action : "fa-external-link-alt"}></i>
       </button>
     : 
       <a href={props.href} class={buttonCSS}>
         {props.icon && <i class={props.icon}></i>}
         {props.children}
-        <i class={props.action ? props.action : "fas fa-external-link-alt"}></i>
+        <i class={props.action ? props.action : "fa-external-link-alt"}></i>
       </a>  
     }
   </div>
@@ -35,6 +35,9 @@ const buttonCSS = cxs({
   'text-decoration': 'none',
   cursor: 'pointer',
   padding: '.5em .75em',
+  ' > i': {
+    'font-size': '.75em'
+  },
   ' > i:first-of-type': {
     padding: '0 .75em 0 0'
   },
