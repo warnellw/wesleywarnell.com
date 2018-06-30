@@ -2,7 +2,19 @@
   publish = "dist/"
   command = "webpack --mode=production"
 [[redirects]]
+  from = "https://weswarnell.com"
+  to = "https://wesleywarnell.com"
+  status = 301
+[[redirects]]
+  from = "https://www.weswarnell.com"
+  to = "https://wesleywarnell.com"
+  status = 301
+[[redirects]]
   from = "https://wtw.io"
+  to = "https://wesleywarnell.com"
+  status = 301
+[[redirects]]
+  from = "https://www.wtw.io"
   to = "https://wesleywarnell.com"
   status = 301
 [[redirects]]

@@ -5,6 +5,7 @@ import Home from '../pages/home'
 import Projects from '../pages/projects'
 import Blog from '../pages/blog'
 import Contact from '../pages/contact'
+import NotFound from '../pages/notfound'
 
 export default () => (
   <section class={sectionCSS}>
@@ -13,6 +14,7 @@ export default () => (
       <Projects path="/projects" />
       <Blog path="/blog" />
       <Contact path="/contact" />
+      <NotFound default />
     </Router>
   </section>
 )
