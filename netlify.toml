@@ -30,14 +30,6 @@
   to = "https://wesleywarnell.com"
   status = 301
 [[redirects]]
-  from = "https://wtw.io/*"
-  to = "https://wesleywarnell.com/:splat"
-  status = 301
-[[redirects]]
-  from = "https://www.wtw.io/*"
-  to = "https://wesleywarnell.com/:splat"
-  status = 301
-[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
