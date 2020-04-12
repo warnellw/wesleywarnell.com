@@ -1,30 +1,27 @@
 {
   "name": "wesleywarnell.com",
   "version": "1.0.0",
-  "description": "Wesley Warnell's website.",
-  "main": "index.js",
   "scripts": {
-    "build": "webpack --mode=production"
-  },
-  "keywords": [],
-  "author": "Wesley Warnell",
-  "license": "ISC",
-  "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.4",
-    "babel-plugin-transform-react-jsx": "^6.24.1",
-    "babel-preset-env": "^1.7.0",
-    "clean-css": "^4.1.11",
-    "copy-webpack-plugin": "^4.5.1",
-    "html-webpack-include-assets-plugin": "^1.0.4",
-    "html-webpack-plugin": "^3.2.0",
-    "webpack": "^4.12.0",
-    "webpack-cli": "^3.0.6",
-    "webpack-merge-and-include-globally": "^1.0.7"
+    "build": "npm run snowpack -- --optimize & cross-env NODE_ENV=production npm run postcss",
+    "postcss": "postcss tailwind.css > src/tailwind.css",
+    "prepare": "npm run snowpack",
+    "servor": "servor src --browse --reload",
+    "snowpack": "snowpack --clean --include 'src/**/*.js' --dest 'src/web_modules'",
+    "start": "npm run snowpack & npm run postcss && npm run servor"
   },
   "dependencies": {
-    "preact": "^8.2.9",
-    "preact-router": "^2.6.1",
-    "cxs": "^6.2.0"
+    "htm": "^3.0.3",
+    "preact": "^10.3.2",
+    "preact-router": "^3.2.1",
+    "tailwindcss": "^1.2.0"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.0.6",
+    "cross-env": "^7.0.0",
+    "cssnano": "^4.1.10",
+    "postcss-cli": "^7.1.0",
+    "postcss-import": "^12.0.1",
+    "servor": "^3.2.0",
+    "snowpack": "^1.5.0"
   }
 }

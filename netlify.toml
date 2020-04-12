@@ -1,35 +1,46 @@
 [build]
-  publish = "dist/"
-  command = "webpack --mode=production"
+publish = "src"
+command = "npm run build"
+
 [[headers]]
-  for = "/*"
-  [headers.values]
-    Content-Security-Policy = "default-src 'self'; style-src 'self' 'unsafe-inline'"
-    Referrer-Policy = "no-referrer"
-    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
-    X-Content-Type-Options = "nosniff"
-    X-DNS-Prefetch-Control = "off"
-    X-Download-Options = "noopen"
-    X-Frame-Options = "DENY"
-    X-Permitted-Cross-Domain-Policies = "none"
-    X-XSS-Protection = "1; mode=block"
+for = "/*"
+
+[headers.values]
+Content-Security-Policy = "default-src 'self'; style-src 'self' 'unsafe-inline'"
+Referrer-Policy = "no-referrer"
+Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+X-Content-Type-Options = "nosniff"
+X-DNS-Prefetch-Control = "off"
+X-Download-Options = "noopen"
+X-Frame-Options = "DENY"
+X-Permitted-Cross-Domain-Policies = "none"
+X-XSS-Protection = "1; mode=block"
+
 [[redirects]]
-  from = "https://weswarnell.com"
-  to = "https://wesleywarnell.com"
-  status = 301
+from = "https://weswarnell.com"
+to = "https://wesleywarnell.com"
+status = 301
+force = true
+
 [[redirects]]
-  from = "https://www.weswarnell.com"
-  to = "https://wesleywarnell.com"
-  status = 301
+from = "https://www.weswarnell.com"
+to = "https://wesleywarnell.com"
+status = 301
+force = true
+
 [[redirects]]
-  from = "https://wtw.io"
-  to = "https://wesleywarnell.com"
-  status = 301
+from = "https://wtw.io"
+to = "https://wesleywarnell.com"
+status = 301
+force = true
+
 [[redirects]]
-  from = "https://www.wtw.io"
-  to = "https://wesleywarnell.com"
-  status = 301
+from = "https://www.wtw.io"
+to = "https://wesleywarnell.com"
+status = 301
+force = true
+
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+from = "/*"
+to = "/index.html"
+status = 200
