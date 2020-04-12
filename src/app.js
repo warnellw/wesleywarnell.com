@@ -45,7 +45,7 @@ const ContactInput = ({ label, type }) => html`
   <${type}
     class="shadow appearance-none border rounded w-full py-2 px-3 text-xl text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
     id=${type === 'input' ? label.toLowerCase() : undefined}
-    name=${type === 'textarea' ? label.toLowerCase() : undefined}
+    name=${label.toLowerCase()}
     type=${type === 'input' ? 'text' : undefined}
   />
 `;
