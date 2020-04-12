@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "htm": "^3.0.3",
-    "preact": "^10.3.2",
+    "preact": "^10.4.0",
     "preact-router": "^3.2.1",
     "tailwindcss": "^1.2.0"
   },
