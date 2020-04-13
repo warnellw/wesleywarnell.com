@@ -44,7 +44,7 @@ const ContactInput = ({ label, type }) => html`
   </label>
   <${type}
     class="shadow appearance-none border rounded w-full py-2 px-3 text-xl text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-    id=${type === 'input' ? label.toLowerCase() : undefined}
+    id=${label.toLowerCase()}
     name=${label.toLowerCase()}
     type=${type === 'input' ? 'text' : undefined}
   />
@@ -54,7 +54,7 @@ const Section = ({ title, children }) => {
   const words = title.split(' ');
   const [titleAppend, ...titlePrepend] = [words.pop(), ...words.join(' ')];
   return html`
-    <h3 class="text-2xl font-bold mt-4">
+    <h3 class="text-2xl font-bold">
       ${titlePrepend} <span class="text-teal-600">${titleAppend}</span>
     </h3>
     ${children}
@@ -157,7 +157,7 @@ const App = () => html`
             </div>
           </div>
         </header>
-        <section class="p-4 sm:p-8 pt-12">
+        <section class="p-8 pt-12">
           <${Router}>
             <${About} default />
             <${Projects} path="/projects" />
