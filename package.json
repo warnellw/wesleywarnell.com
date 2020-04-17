@@ -10,7 +10,7 @@
     "start": "npm run snowpack & npm run postcss && npm run servor"
   },
   "dependencies": {
-    "htm": "^3.0.3",
+    "htm": "^3.0.4",
     "preact": "^10.4.0",
     "preact-router": "^3.2.1",
     "tailwindcss": "^1.2.0"
