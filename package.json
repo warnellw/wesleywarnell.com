@@ -2,12 +2,8 @@
   "name": "wesleywarnell.com",
   "version": "1.0.0",
   "scripts": {
-    "build": "npm run snowpack -- --optimize & cross-env NODE_ENV=production npm run postcss",
-    "postcss": "postcss tailwind.css > src/tailwind.css",
-    "prepare": "npm run snowpack",
-    "servor": "servor src --browse --reload",
-    "snowpack": "snowpack --clean --include 'src/**/*.js' --dest 'src/web_modules'",
-    "start": "npm run snowpack & npm run postcss && npm run servor"
+    "dev": "snowpack dev",
+    "build": "snowpack build"
   },
   "dependencies": {
     "htm": "^3.0.4",
@@ -16,11 +12,8 @@
     "tailwindcss": "^1.4.6"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^2.2.0",
-    "cross-env": "^7.0.2",
     "cssnano": "^4.1.10",
     "postcss-cli": "^7.1.1",
-    "servor": "^4.0.2",
-    "snowpack": "^1.7.1"
+    "snowpack": "^2.5.4"
   }
 }

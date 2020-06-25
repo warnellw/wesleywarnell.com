@@ -1,3 +1,3 @@
 module.exports = {
-  purge: { enabled: false },
+  purge: ['./src/**/*.html', './src/**/*.js'],
 };

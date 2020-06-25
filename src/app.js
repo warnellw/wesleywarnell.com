@@ -1,7 +1,7 @@
 import { h, render } from './web_modules/preact.js';
 import htm from './web_modules/htm.js';
 import { Router } from './web_modules/preact-router.js';
-import { Link } from './web_modules/preact-router/match.js';
+import Match from './web_modules/preact-router/match.js';
 
 const html = htm.bind(h);
 
@@ -12,7 +12,7 @@ const ExternalLink = ({ children, href, spaceBefore, spaceAfter }) => html`
 `;
 
 const NavLink = ({ children, href }) => html`
-  <${Link}
+  <${Match.Link}
     href=${href}
     activeClassName="border-solid border-b-2"
     class="mx-4 sm:mx-8 pb-1"
