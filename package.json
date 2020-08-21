@@ -9,7 +9,7 @@
     "htm": "^3.0.4",
     "preact": "^10.4.7",
     "preact-router": "^3.2.1",
-    "tailwindcss": "^1.6.2"
+    "tailwindcss": "^1.7.3"
   },
   "devDependencies": {
     "cssnano": "^4.1.10",
