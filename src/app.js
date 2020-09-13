@@ -1,7 +1,7 @@
-import { h, render } from './web_modules/preact.js';
-import htm from './web_modules/htm.js';
-import { Router } from './web_modules/preact-router.js';
-import Match from './web_modules/preact-router/match.js';
+import { h, render } from 'preact';
+import htm from 'htm';
+import { Router } from 'preact-router';
+import Match from 'preact-router/match';
 
 const html = htm.bind(h);
 
@@ -28,9 +28,7 @@ const ProjectCard = ({ title, img, children }) => html`
     </div>
     <div class="p-4">
       <h4 class="text-xl font-bold">${title}</h4>
-      <p class="text-xl">
-        ${children}
-      </p>
+      <p class="text-xl">${children}</p>
     </div>
   </div>
 `;
