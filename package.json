@@ -9,7 +9,7 @@
     "htm": "^3.0.4",
     "preact": "^10.5.4",
     "preact-router": "^3.2.1",
-    "tailwindcss": "^1.9.4"
+    "tailwindcss": "^1.9.5"
   },
   "devDependencies": {
     "@snowpack/plugin-postcss": "^1.0.5",
